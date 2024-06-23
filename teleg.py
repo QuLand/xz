@@ -5,6 +5,7 @@ from selenium import webdriver
 
 import time
 
+
 def get_count_input():
     count_input = askinteger("Input", "Enter count:")
     return count_input
@@ -30,4 +31,4 @@ for i in range(count):
 
     auth = driver.find_element("xpath", "/html/body/div[2]/div/div[1]/div/div/form/button[1]/div")
     auth.click()
-    time.sleep(3)
+    time.sleep(4)
